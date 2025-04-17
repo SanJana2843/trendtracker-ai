@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f9f9;
+  color: #2f3640;
+}
+
+.login-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
+}
+
+.login-screen h1 {
+  font-size: 2.5rem;
+  color: #2d3436;
+}
+
+.login-screen input, .login-screen button {
+  padding: 0.8rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.login-screen input {
+  width: 250px;
+}
+
+.login-screen button {
+  background: #2d3436;
+  color: white;
+  cursor: pointer;
+}
+
+.dashboard-container {
+  display: flex;
+}
+
+.sidebar {
+  width: 220px;
+  background: #2d3436;
+  color: white;
+  height: 100vh;
+  padding: 1rem;
+  position: fixed;
+}
+
+.sidebar h2 {
+  font-size: 1.5rem;
+  color: #74ebd5;
+}
+
+.sidebar nav a {
+  display: block;
+  color: #dfe6e9;
+  margin: 1rem 0;
+  text-decoration: none;
+}
+
+.sidebar nav a:hover {
+  color: #74ebd5;
+}
+
+.main-content {
+  margin-left: 240px;
+  padding: 2rem;
+  width: calc(100% - 240px);
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+input, textarea {
+  width: 90%;
+  padding: 0.7rem;
+  margin: 0.7rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.gpt-section button {
+  background-color: #6c5ce7;
+  color: white;
+}
+
+.scam-section button {
+  background-color: #00b894;
+  color: white;
+}
+
+.toxicity-section button {
+  background-color: #e84393;
+  color: white;
+}
+
+#gptResult, #linkResult, #toxicityResult {
+  background: #dfe6e9;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+}

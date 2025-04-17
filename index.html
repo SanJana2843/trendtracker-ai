@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TrendTracker AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Login Screen -->
+  <div class="login-screen" id="loginScreen">
+    <h1>TrendTracker AI</h1>
+    <input type="text" id="username" placeholder="Enter your name" />
+    <button onclick="login()">Login</button>
+  </div>
+
+  <!-- Dashboard -->
+  <div class="dashboard-container" id="dashboard" style="display: none;">
+    <aside class="sidebar">
+      <h2>TrendTracker AI</h2>
+      <nav>
+        <a href="#yt">📈 YouTube Trends</a>
+        <a href="#gpt">✨ Viral Ideas</a>
+        <a href="#scam">🛡️ Scam Link Checker</a>
+        <a href="#toxic">💬 Toxic Comment</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <section id="yt">
+        <h2>📈 YouTube Trends</h2>
+        <p>Feature under development. Coming soon!</p>
+      </section>
+
+      <section id="gpt" class="gpt-section">
+        <h2>✨ Get Viral Content Ideas</h2>
+        <input type="text" id="topicInput" placeholder="Enter a topic..." />
+        <button onclick="getIdeas()">Generate Ideas</button>
+        <div id="gptResult"></div>
+      </section>
+
+      <section id="scam" class="scam-section">
+        <h2>🛡️ Scam Link Checker</h2>
+        <input type="text" id="linkInput" placeholder="Paste URL to check..." />
+        <button onclick="checkScamLink()">Check Link</button>
+        <div id="linkResult"></div>
+      </section>
+
+      <section id="toxic" class="toxicity-section">
+        <h2>💬 Toxic Comment Checker</h2>
+        <textarea id="commentInput" placeholder="Paste a comment here..."></textarea>
+        <button onclick="checkToxicity()">Analyze</button>
+        <div id="toxicityResult"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
